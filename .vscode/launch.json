@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32F446 Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "main.elf",
+            "device": "stm32f446re",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ]
+        }
+    ]
+}
